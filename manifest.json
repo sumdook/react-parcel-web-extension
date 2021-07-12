@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Web Extension",
+  "description": "Web extension which can be shipped to multiple browsers.",
+  "version": "0.0.1",
+  "icons": {
+    "16": "assets/icon16.png",
+    "32": "assets/icon32.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  },
+  "browser_action": {
+    "default_icon": "assets/icon128.png",
+    "default_popup": "src/static/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["src/scripts/content.tsx"]
+    }
+  ],
+  "background": {
+    "scripts": ["src/scripts/background.ts"],
+    "persistent": false
+  },
+  "options_ui": {
+    "page": "src/static/options.html",
+    "open_in_tab": true
+  }
+}
