@@ -1,5 +1,7 @@
 import React from 'react';
 
-export default function Text({ children }) {
+const Text: React.FC = ({ children }) => {
   return <p>{children}</p>;
-}
+};
+
+export default Text;
