@@ -4,7 +4,7 @@ const App = () => {
   return (
     <button
       style={{
-        position: 'absolute',
+        position: 'fixed',
         bottom: 30,
         right: 30,
       }}

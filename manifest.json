@@ -16,11 +16,11 @@
   "content_scripts": [
     {
       "matches": ["https://*/*"],
-      "js": ["src/scripts/content.tsx"]
+      "js": ["src/scripts/content.js"]
     }
   ],
   "background": {
-    "scripts": ["src/scripts/background.ts"],
+    "scripts": ["src/scripts/background.js"],
     "persistent": false
   },
   "options_ui": {
